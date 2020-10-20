@@ -12,5 +12,5 @@ export PATH="/usr/local/sbin:$PATH"
 export DISPLAY=$('/private/tmp/com.apple.launchd.V2enEWACyl/org.macosforge.xquartz:0')
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/$(USER)/.sdkman"
-[[ -s "/Users/$(USER)/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/$(USER)/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
