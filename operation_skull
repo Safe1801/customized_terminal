@@ -1,0 +1,30 @@
+if [ -z "$PS1" ]; then
+   return
+fi
+
+PS1='\h:\W \u\$ '
+# Make bash check its window size after a process completes
+shopt -s checkwinsize
+
+[ -r "/etc/bashrc_$TERM_PROGRAM" ] && . "/etc/bashrc_$TERM_PROGRAM"
+
+clear 
+
+figlet -f Cybermedium "Operation Prohibited"  | lolcat  
+
+ echo "                 _-----_ "
+ echo "  _ _          .    X    .             _"
+ echo "E    '       /  ,       ,  \        .'    3    "            
+ echo "      \     |     \   /     |      /     "  
+ echo "   >   ' '  |,  .-.   .-.  ,|   ' '    <   " 
+ echo "E   _/ \  \ | )(__/   \__)( |.'  . -  _  3 "  
+ echo "        ' . |/      /\     \|  .'        " 
+ echo "  __       (_       ^^      _)        .- -       "    
+ echo "E     \ _.' / \_ |IIIII| _/\  '. ___ '    3   	 "  
+ echo "    > __ - '     |\III/|    '. ___     <        "     
+ echo "E __ /  	        \     /           \  __  3"
+ echo "                  -----               " 
+ echo "                                      "
+ echo " 								  		"
+
+source /home/sadafessehazion/.bash_aliases
